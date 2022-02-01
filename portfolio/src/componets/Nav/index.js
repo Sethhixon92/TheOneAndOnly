@@ -1,6 +1,7 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import { Navbar } from 'react-bootstrap';
-import { Container } from 'react-bootstrp';
+import { Container } from 'react-bootstrap';
 
 function Nav() { 
     
@@ -15,7 +16,7 @@ function Nav() {
                 <Navbar.brand href="#home">Seth Hixon</Navbar.brand>
                 <Nav className="me-auto">
                     <Nav.link href="#about">About Me</Nav.link>
-                    <Nav.link href="#portfolio">Portfolio</Nav.link>
+                    <Nav.link href="#port">Portfolio</Nav.link>
                     <Nav.link href="#contact">Contact</Nav.link>
                     <Nav.link href="#resume">Resume</Nav.link>
                 </Nav>
@@ -25,4 +26,3 @@ function Nav() {
     );
 }
 
-export default Nav;
