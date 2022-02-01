@@ -2,15 +2,14 @@ import React from "react";
 import './App.css';
 import About from './componets/About';
 import Nav from './componets/Nav';
-import TitlebarBelowImageList from "./componets/Gallery";
+import Gallery from "./componets/Gallery";
 
 function App() {
   return (
     <div>
-      <header>'Seth Hixon'</header>
       <Nav></Nav>
       <main>
-      <TitlebarBelowImageList></TitlebarBelowImageList>
+        <Gallery></Gallery>
         <About></About>
       </main>
     </div>

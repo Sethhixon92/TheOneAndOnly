@@ -1,57 +1,26 @@
 import React from 'react';
+import { Navbar } from 'react-bootstrap';
+import { Container } from 'react-bootstrp';
 
-function Nav() {
-    const categories = [
-      {
-          name:'El Buen Sabor',
-          description:
-            "This is the 1st group project I did. In this we made a website for consumers to find recipes to make at home",
-      },
-      {
-          name: 'Anansi Corp.',
-          description: 
-          "This is the 2nd group project I did. In this we made a database and an app for companies to post schedules, post lists for employees, and cover shifts",
-      },
-      {
-          name: 'VividStrokes',
-          description:
-          "This is the 3rd group project I did. In this we made an app for consumers to find digital artists. The consumers can also purchase some art  or support the artist with donations."
-      },
-    ];
-
-    function categorySelected() {
-        console.log("hello")
-    }
-
+function Nav() { 
+    
     return (
         <header>
             <h2>
                 <a href='/'>
-                    
                 </a>
             </h2>
-            <nav>
-                <ul className="flex-row">
-                    <li className="mx-2">
-                        <a href="#about">
-                            About Me
-                        </a>
-                    </li>
-                    <li>
-                        <span>Contact</span>
-                    </li>
-                    {categories.map((category) => (
-                        <li
-                        className="mx-1"
-                        key={category.name}
-                        >
-                            <span onClick={categorySelected} >
-                                {category.name}
-                            </span>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+            <Navbar bg="primary" variant="dark">
+                <Container>
+                <Navbar.brand href="#home">Seth Hixon</Navbar.brand>
+                <Nav className="me-auto">
+                    <Nav.link href="#about">About Me</Nav.link>
+                    <Nav.link href="#portfolio">Portfolio</Nav.link>
+                    <Nav.link href="#contact">Contact</Nav.link>
+                    <Nav.link href="#resume">Resume</Nav.link>
+                </Nav>
+                </Container>
+            </Navbar>
         </header>
     );
 }
