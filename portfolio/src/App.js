@@ -19,8 +19,8 @@ function App() {
                 </Nav>
             </Navbar>
          <main>
-        <Portfolio></Portfolio>
         <About></About>
+        <Portfolio></Portfolio>
       </main>
     </div>
   );
